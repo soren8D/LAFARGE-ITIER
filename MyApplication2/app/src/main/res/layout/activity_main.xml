@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yitier910e.myapplication2.MainActivity">
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="undo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/undoButton" />
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/resetButton" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="230dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintEnd_toStartOf="@+id/valueId"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="230dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar3"
+        app:layout_constraintEnd_toStartOf="@+id/valueId"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="230dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintEnd_toStartOf="@+id/valueId"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imgView"
+        android:layout_width="377dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lena" />
+
+    <TextView
+        android:id="@+id/effectId"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="cursive"
+        android:text="Choose your effect"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView" />
+
+    <TextView
+        android:id="@+id/valueId"
+        android:layout_width="81dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar" />
+
+</android.support.constraint.ConstraintLayout>

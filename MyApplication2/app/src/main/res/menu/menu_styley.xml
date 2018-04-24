@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/photoId"
+        android:icon="@drawable/photo2"
+        android:title="photo"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/loadId"
+        android:icon="@drawable/load2"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/saveId"
+        android:icon="@drawable/save2"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/grayId"
+        android:title="Gray" />
+    <item
+        android:id="@+id/contrastId"
+        android:title="Contrast" />
+    <item
+        android:id="@+id/laplaceId"
+        android:title="Laplacien" />
+    <item
+        android:id="@+id/sepiaId"
+        android:title="Sepia" />
+    <item
+        android:id="@+id/equalId"
+        android:title="Equalizator" />
+    <item
+        android:id="@+id/luminId"
+        android:title="Luminosity" />
+    <item
+        android:id="@+id/cartoonId"
+        android:title="Cartoon" />
+    <item
+        android:id="@+id/expoId"
+        android:title="Exposition" />
+    <item
+        android:id="@+id/contourId"
+        android:title="Contouring" />
+    <item
+        android:id="@+id/monoId"
+        android:title="Monocolor" />
+    <item
+        android:id="@+id/moyenneId"
+        android:title="Moyenne" />
+    <item
+        android:id="@+id/gaussId"
+        android:title="Gaussienne" />
+</menu>
